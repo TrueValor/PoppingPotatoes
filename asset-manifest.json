@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PoppingPotatoes/static/css/main.bee59598.chunk.css",
+    "main.js": "/PoppingPotatoes/static/js/main.ea67ad0f.chunk.js",
+    "main.js.map": "/PoppingPotatoes/static/js/main.ea67ad0f.chunk.js.map",
+    "runtime-main.js": "/PoppingPotatoes/static/js/runtime-main.bd90d9f9.js",
+    "runtime-main.js.map": "/PoppingPotatoes/static/js/runtime-main.bd90d9f9.js.map",
+    "static/js/2.ff95a0f6.chunk.js": "/PoppingPotatoes/static/js/2.ff95a0f6.chunk.js",
+    "static/js/2.ff95a0f6.chunk.js.map": "/PoppingPotatoes/static/js/2.ff95a0f6.chunk.js.map",
+    "static/js/3.ba8a7eb4.chunk.js": "/PoppingPotatoes/static/js/3.ba8a7eb4.chunk.js",
+    "static/js/3.ba8a7eb4.chunk.js.map": "/PoppingPotatoes/static/js/3.ba8a7eb4.chunk.js.map",
+    "index.html": "/PoppingPotatoes/index.html",
+    "static/css/main.bee59598.chunk.css.map": "/PoppingPotatoes/static/css/main.bee59598.chunk.css.map",
+    "static/js/2.ff95a0f6.chunk.js.LICENSE.txt": "/PoppingPotatoes/static/js/2.ff95a0f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd90d9f9.js",
+    "static/js/2.ff95a0f6.chunk.js",
+    "static/css/main.bee59598.chunk.css",
+    "static/js/main.ea67ad0f.chunk.js"
+  ]
+}
