@@ -1,0 +1,55 @@
+#TopImg {
+  position: relative;
+  background: black;
+  min-height: 500px;
+  height:100vh;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #002d77 100%);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%),
+    url("https://thecozyapron.com/wp-content/uploads/2018/03/dijon-roasted-potatoes_thecozyapron_1.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .title {
+    padding: 200px 0 80px;
+    text-align: right;
+
+    h1 {
+      font-family: $displayFont;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+      font-size: 6rem;
+    }
+    h5 {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+    }
+  }
+  .contact-info {
+    width:100%;
+    bottom: 50px;
+    right: 0;
+    position: absolute;
+    text-align: right;
+    color:$paragraphColor;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+
+    .booking {
+      margin-bottom: 10px;
+      color:$paragraphColor;
+    }
+
+    strong {
+      font-weight: 700;
+      color:white;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color:white;
+    }
+  }
+}

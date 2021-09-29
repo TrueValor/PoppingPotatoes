@@ -1,0 +1,39 @@
+#OurStory {
+padding: 100px 0;
+
+.quote {
+  color:$paragraphColor;
+  margin: 0.5rem 0 3rem;
+  strong {
+    color: $black;
+    font-weight: 700;
+  }
+}
+  
+  .reserve-btn{
+    font-family: $displayFont;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 1px solid $black;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+
+  &:hover{
+    background:$green;
+    color:white;
+      }
+  }
+.video-img{
+  max-width: 400px;
+  height:550px;
+  background-image: 
+    url("https://www.julieseatsandtreats.com/wp-content/uploads/2016/05/Steak-Potato-Kebabs-Overhead.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 40px auto;
+}
+
+}
