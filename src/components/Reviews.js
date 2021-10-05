@@ -1,10 +1,14 @@
-import React from "react";
+import React , { useState } from "react";
 import {InfoDump} from "./Info.js";
-import {action} from "./Info.js"
+
 
 export default function Reviews() {
+ 
 
-    var currentReview = function() {
+    const [count, setCount ] = useState(0)
+
+
+ var currentReview = function() {
       return(
       <div>   
         <h2>{InfoDump.reviewData[InfoDump.reviewStatus.currentReview].company}</h2>
@@ -15,11 +19,14 @@ export default function Reviews() {
      ) 
     }
 
+
+
     var leftClickBTN = function() {
         if (InfoDump.reviewStatus.currentReview === 0){
             console.log('Do Nothing')
         }else{
-            action.reviewLeftClick()
+            reviewLeftClick();
+            setCount(count-1)
         } 
     }
 
@@ -27,9 +34,37 @@ export default function Reviews() {
         if (InfoDump.reviewStatus.currentReview === (InfoDump.reviewData.length - 1)){
             console.log('Do Nothing')
         }else{
-            action.reviewRightClick()
+            reviewRightClick();
+            setCount(count+1)
         }
     }
+
+
+    function reviewLeftClick () {
+        return (
+            {
+            InfoDump:{
+            reviewStatus:{
+                currentReview : InfoDump.reviewStatus.currentReview--
+            }
+        }}
+        )
+    }
+
+    function reviewRightClick () {
+        return (
+            {
+                InfoDump:{
+            reviewStatus:{
+                currentReview : InfoDump.reviewStatus.currentReview++
+            }
+        }}
+        )
+    }
+
+
+
+
 
     return (
       
@@ -47,7 +82,7 @@ export default function Reviews() {
                     <div class="arrows">
                         <i onClick={leftClickBTN}
                          class={`fa fa-arrow-left ${(InfoDump.reviewStatus.currentReview > 0) ? 'ready' : ''}`} aria-hidden="true"></i>
-                        <i onClick={rightClickBTN}
+                        <i onClick={rightClickBTN }
                          class={`fa fa-arrow-right ${(InfoDump.reviewStatus.currentReview === (InfoDump.reviewData.length - 1)) ? '' : 'ready'}`} aria-hidden="true"></i>
                     </div>
                 </div>
